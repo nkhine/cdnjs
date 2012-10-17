@@ -1,7 +1,7 @@
 {
 	"name": "objx",
 	"filename": "objx.js",
-	"version": "2.3.6",
+	"version": "2.3.7",
 	"description": "objx puts JavaScript on steroids. It wraps normal JavaScript objects and enhances them via a suite of plugins.",
 	"homepage": "https://code.google.com/p/objx/",
 	"keywords": [
