@@ -7,20 +7,22 @@ The repository mirroring all scripts on cdnjs.cloudflare.com
 
 We will host any version of any library. Feel free to add a pull request for an older version of a library if your site still uses it.
 
+__Libraries must have notable popularity. 100 watchers on GitHub is a good example, but as long as reasonably popularity can be demonstrated the library will be added.__
+
 ## Pull requests steps
 
 1. Fork this repository
 2. Add your library (following the conventions of this repository)
   * 1 library per pull request
+  * The pull request must be tagged in the original repository (some exceptions apply)
   * include a package.json in the npm format (see `test/schemata/npm-package.json` for details - it's very simple)
-3. Run your package.json through a [JSON Validator](http://jsonlint.com/)
-  * Bonus points: set up a [Travis CI hook](http://about.travis-ci.org/docs/user/getting-started/) (we already made the `.travis.yml`) for your fork!
-4. Send us a pull request.
+  * Run `npm test` to check everything is ok
+3. Send us a pull request.
   * Make sure you include in the pull description:
       1. Where you downloaded the script
       2. If it isn't clear, how you found the version of the script
-  * e.g. https://github.com/cdnjs/cdnjs/pull/229
-  * If you set up Travis CI, include your badge for super-readability!
+  * e.g. https://github.com/cdnjs/cdnjs/pull/541
+4. If the library doesn't already provide a minified version, our preferred minifier is [UglifyJS](http://marijnhaverbeke.nl/uglifyjs "UglifyJS")
 
 ## Running the validator
 1. Install all the needed dependencies locally (you will need `npm` and `node`): `npm install`
